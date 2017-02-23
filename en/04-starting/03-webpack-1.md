@@ -103,3 +103,6 @@ module.exports = {
 
 - This config creates a Webpack dev server, see the key `devServer`. We will be using this server for development instead of Elm reactor.
 - Entry point for our application will be `./src/index.js`, see the `entry` key.
+- Additional [elm compiler options can be passed to the elm-webpack-loader](https://github.com/elm-community/elm-webpack-loader/blob/master/README.md#options).  For example, to enable the [elm debugger](http://debug.elm-lang.org/):
+
+        loader: 'elm-webpack-loader?debug=true'
